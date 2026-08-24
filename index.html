@@ -25,9 +25,65 @@
     </header>
     <main>
         <div class="hero">
-            <h1 id="hero-title"></h1>
+            <p id="hero-title"></p>
             <p id="hero-description"></p>
             <img src="" alt="icon hero" id="hero-icon">
+        </div>
+        <div class="projects">
+            <div class="project-card">
+                <img src="" alt="icon projects" id="projects-icon">
+                <p id="projects-title"></p>
+                <p id="projects-text"></p>
+                <p id="projects-desc"></p>
+                <p id="projects-tec"></p>
+                <button id="live-button">
+                    <img src="" alt="live icon">
+                </button>
+                <button id="code-button">
+                    <img src="" alt="code icon">
+                </button>
+            </div>
+        </div>
+
+        <div id="project-modal" class="project-modal">
+            <div class="modal-content">
+                <button id="modal-close" class="modal-close">
+                    ×
+                </button>
+                <header class="modal-header">
+                    <span id="modal-number"></span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-subtitle"></p>
+                </header>
+                <img id="modal-image" src="" alt="">
+                <div class="modal-body">
+                    <section>
+                        <p id="small-title"></p>
+                        <p id="modal-description"></p>
+                        <ul id="modal-features"></ul>
+                    </section>
+                    
+                    <div class="modal-actions">
+                        <a
+                            id="modal-demo"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            ↗ <span>Live Demo</span>
+                        </a>
+
+                        <a
+                            id="modal-github"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            view GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
