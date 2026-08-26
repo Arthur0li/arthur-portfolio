@@ -1,115 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arthur's personal portfolio — clear, accessible case studies for development projects.">
+  <title>Portfolio - Arthur</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-left">
-                <a id="nav-home" href="index.html"></a>
-                <a id="nav-about" href="about.html"></a>
-                <a id="nav-contact" href="contact.html"></a>
-            </div>
-            <div class="nav-right">
-                <div class="logo"></div>
-                <span class="user-name">Arthur</span>
-                <button id="language-button">PT</button>
-                <button id="theme-toggle">
-                    <img src="" alt="icon theme">
-                </button>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <p id="hero-title"></p>
-            <p id="hero-description"></p>
-            <img src="" alt="icon hero" id="hero-icon">
-        </section>
-        <section class="projects">
-            <article class="project-card">
-                <img src="" alt="icon projects" id="projects-icon">
-                
-                <div class="project-info">
-                    <span class="project-number"></span>
-                    <h3 class="project-title"></h3>
-                    <p class="project-subtitle"></p>
-                    <p class="project-description"></p>
-                </div>
-                <div class="project-technologies">
-                    <p></p>
-                </div>
-                <div class="project-actions">
-                    <button id="live-button">
-                        <img src="" alt="live icon">
-                    </button>
-                    <button id="code-button">
-                        <img src="" alt="code icon">
-                    </button>
-                </div>
-            </article>
-        </section>
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-page="home">Home</button>
+        <button class="nav-link" data-page="about">About</button>
+        <button class="nav-link" data-page="contact">Contact</button>
+      </nav>
 
-        <div id="project-modal" class="project-modal">
-            <div class="modal-content">
-                <button id="modal-close" class="modal-close">
-                    ×
-                </button>
-                <header class="modal-header">
-                    <span id="modal-number"></span>
-                    <h2 id="modal-title"></h2>
-                    <p id="modal-subtitle"></p>
-                </header>
-                <img id="modal-image" src="" alt="">
-                <div class="modal-body">
-                    <section>
-                        <p id="small-title"></p>
-                        <p id="modal-description"></p>
-                        <ul id="modal-features"></ul>
-                    </section>
-                    
-                    <div class="modal-actions">
-                        <a
-                            id="modal-demo"
-                            href="#"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            ↗ <span>Live Demo</span>
-                        </a>
+      <div class="brand-controls">
+        <div class="brand">
+          <div class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="32" height="32" fill="none">
+              <circle cx="16" cy="16" r="14.5" class="logo-circle" />
+              <path d="M10 22 C10 14 15.5 11.5 21 16 C26.5 20.5 21 26.5 16 22 C11 17.5 14.5 11 20 9" class="logo-path" />
+            </svg>
+          </div>
+          <span class="brand-name">Arthur</span>
+        </div>
 
-                        <a
-                            id="modal-github"
-                            href="#"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            view GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="separator"></div>
+
+        <button class="control-button" type="button" id="languageButton" aria-label="Switch to Portuguese">
+          <span aria-hidden="true">◎</span>
+          <span id="languageLabel">PT</span>
+        </button>
+
+        <button class="icon-button control-button" type="button" id="themeButton" aria-label="Switch to dark mode">
+          <span id="themeIcon" aria-hidden="true">☼</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+  </main>
+
+  <footer id="siteFooter">
+  </footer>
+
+  <div class="modal-backdrop" id="projectModal" hidden>
+    <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modalProjectName">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title-row">
+            <span class="project-number" id="modalProjectNumber">01</span>
+            <span class="dot" aria-hidden="true">·</span>
+            <h2 id="modalProjectName">Project</h2>
+          </div>
+          <p id="modalProjectTagline"></p>
         </div>
-    </main>
-    <footer>
-        <p id="footer-text">
-            <span id="footer-message"></span>
-            <a id="contact-link" href="contact.html"></a>
-        </p>
-        <div class="footer-buttons">
-            <button id="linkedin">
-                <img src="" alt="LinkedIn">
-            </button>
-            <button id="github">
-                <img src="" alt="GitHub">
-            </button>
-            <button id="email">
-                <img src="" alt="Email">
-            </button>
-        </div>
-    </footer>   
+        <button class="icon-button" id="closeModal" type="button" aria-label="Close">×</button>
+      </div>
+      <div class="modal-image-wrap">
+        <img id="modalImage" src="" alt="">
+      </div>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
