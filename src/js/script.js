@@ -1,0 +1,540 @@
+const projects = [
+  {
+    id: 1,
+    num: '01',
+    name: 'EcoTrack',
+    tagline: 'Making climate data human',
+    description: 'A dashboard that turns raw environmental numbers into clear stories anyone can understand — no expertise required.',
+    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&h=675&fit=crop&auto=format',
+    problem: "Environmental agencies publish vast datasets — but most citizens can't read them and decision-makers get lost in charts with no narrative context.",
+    solution: 'A visual dashboard that translates climate metrics into plain-language summaries and intuitive charts. Designed for people, not data scientists.',
+    role: 'Solo developer — I owned the full stack: data modeling, API design, and every pixel of the interface.',
+    features: ['Real-time air quality index', 'Historical trend charts', 'Location-based alerts', 'Shareable report links'],
+    tech: ['React', 'D3.js', 'Node.js', 'PostgreSQL'],
+    result: 'Adopted by 3 environmental NGOs in the pilot phase. Average session time: 4 minutes — 3× above industry baseline for data dashboards.',
+    demo: '#',
+    github: '#'
+  },
+  {
+    id: 2,
+    num: '02',
+    name: 'Roots',
+    tagline: 'Growing community, one plot at a time',
+    description: 'An app that replaces the chaos of group chats and paper lists in urban community gardens with something that actually works.',
+    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=675&fit=crop&auto=format',
+    problem: 'Forty-member community gardens were running on WhatsApp threads and handwritten notebooks. Coordination was exhausting and things kept falling through the cracks.',
+    solution: 'A mobile-first app with a shared planting calendar, tool-lending tracker, and harvest log. Warm and approachable — not another enterprise product.',
+    role: 'Lead developer and UX designer. I ran user interviews with real garden members and iterated until it felt genuinely human.',
+    features: ['Visual plot map', 'Shared tool calendar', 'Harvest log with photos', 'Member directory'],
+    tech: ['React Native', 'Firebase', 'TypeScript', 'Expo'],
+    result: 'Coordination overhead dropped 60%. Members described it as the first garden app that actually feels like a garden.',
+    demo: '#',
+    github: '#'
+  },
+  {
+    id: 3,
+    num: '03',
+    name: 'Clearwater',
+    tagline: 'Drinking water you can trust',
+    description: "A public tool that maps water quality reports across municipalities and alerts residents when something's wrong.",
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=675&fit=crop&auto=format',
+    problem: "Water safety data sits in PDFs across a dozen agencies. There's no way for ordinary people to know if their tap water is at risk today.",
+    solution: 'I unified 5 data sources into one live map. Residents subscribe to alerts for their area and can browse years of historical records in seconds.',
+    role: 'Full-stack developer. I built the scrapers, the backend, and the map interface — start to finish, alone, over six weeks.',
+    features: ['Interactive quality map', 'Contamination alerts by area', 'Historical records by district', 'Open public API'],
+    tech: ['Next.js', 'Python', 'Leaflet.js', 'SQLite', 'Scrapy'],
+    result: 'Indexed 12,000+ water reports. Featured in a regional outlet as a community resource.',
+    demo: '#',
+    github: '#'
+  },
+  {
+    id: 4,
+    num: '04',
+    name: 'Canopy',
+    tagline: 'Forest data, simplified',
+    description: 'An open API that gives researchers clean, unified access to Amazon deforestation data — free, versioned, and ready to use.',
+    image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&h=675&fit=crop&auto=format',
+    problem: 'Scientists studying deforestation waste weeks wrangling incompatible datasets from different satellites and sensors before they can even start their research.',
+    solution: 'One REST API that normalizes the data, returns GeoJSON, and documents every endpoint clearly. Documentation-first, versioned, free for researchers.',
+    role: 'Backend architect and API designer. I made format decisions that balance scientific precision with real developer experience.',
+    features: ['Unified satellite data layer', 'GeoJSON-ready endpoints', 'Rate-limited public access', 'Full researcher tier'],
+    tech: ['FastAPI', 'Python', 'PostGIS', 'Docker', 'AWS Lambda'],
+    result: 'Two university research teams use it as their primary source. Processing 500+ calls per day.',
+    demo: '#',
+    github: '#'
+  }
+];
+
+const translations = {
+  en: {
+    nav: { home: 'Home', about: 'About', contact: 'Contact' },
+    name: 'Arthur',
+    lang: 'PT',
+    hero: {
+      greeting: "Hello, I'm Arthur",
+      line1: 'I turn ideas',
+      line2: 'into digital',
+      line3: 'experiences',
+      description: 'I build software that solves real problems — with care for the people who will use it.',
+      cta: 'Explore my work',
+      snakeAlt: 'Stylised snake illustration — a personal emblem'
+    },
+    projects: {
+      label: 'Selected Work',
+      heading: 'Projects that matter',
+      sub: 'Each one began with a real problem.',
+      demo: 'Live Demo',
+      github: 'GitHub',
+      view: 'View case study'
+    },
+    modal: {
+      challenge: 'The Challenge',
+      approach: 'The Approach',
+      role: 'My Role',
+      features: 'Key Features',
+      tech: 'Technologies',
+      outcome: 'Outcome',
+      demo: 'Live Demo',
+      github: 'View on GitHub',
+      close: 'Close'
+    },
+    about: {
+      label: 'About',
+      headline: 'Nice to meet you.',
+      sub: "I'm a developer who cares about the why behind every product.",
+      body: [
+        'I started coding out of curiosity — I wanted to understand how the things I used every day actually worked. That curiosity became a craft. Over time, I learned to care not just about whether something works, but whether it feels right.',
+        "My work sits at the intersection of technology and human experience. I'm drawn to projects with a clear purpose beyond the screen — tools that help people understand something, connect with someone, or act on information they couldn't access before.",
+        "I find ideas in unexpected places. Long walks. Conversations with people in fields I know nothing about. The natural world, especially — there's something in the way ecosystems self-organise that keeps showing up in how I think about software."
+      ],
+      quote: 'The best interface is the one you don’t notice — because it just works.',
+      focusLabel: 'Currently focused on',
+      focuses: [
+        'Open-source tools for environmental data',
+        'Developer experience at the API layer',
+        'Systems thinking in product design'
+      ],
+      back: 'Back to projects'
+    },
+    contact: {
+      label: 'Contact',
+      headline: 'Let\'s build\nsomething.',
+      sub: "A project, an idea, a question — I'm always open to a conversation.",
+      emailLabel: 'Send me an email',
+      socialLabel: 'Find me on',
+      status: 'Open to freelance projects and collaborations.'
+    },
+    footer: {
+      prompt: 'Have a project, idea or opportunity?',
+      cta: "Let's talk →",
+      copy: 'All rights reserved'
+    }
+  },
+  pt: {
+    nav: { home: 'Início', about: 'Sobre', contact: 'Contato' },
+    name: 'Arthur',
+    lang: 'EN',
+    hero: {
+      greeting: 'Olá, eu sou Arthur',
+      line1: 'Transformo ideias',
+      line2: 'em experiências',
+      line3: 'digitais',
+      description: 'Crio software que resolve problemas reais — com cuidado pelas pessoas que o utilizam.',
+      cta: 'Explorar projetos',
+      snakeAlt: 'Ilustração estilizada de cobra — emblema pessoal'
+    },
+    projects: {
+      label: 'Trabalhos Selecionados',
+      heading: 'Projetos que importam',
+      sub: 'Cada um começou com um problema real.',
+      demo: 'Demo',
+      github: 'GitHub',
+      view: 'Ver case completo'
+    },
+    modal: {
+      challenge: 'O Desafio',
+      approach: 'A Abordagem',
+      role: 'Meu Papel',
+      features: 'Funcionalidades',
+      tech: 'Tecnologias',
+      outcome: 'Resultado',
+      demo: 'Ver Demo',
+      github: 'Ver no GitHub',
+      close: 'Fechar'
+    },
+    about: {
+      label: 'Sobre',
+      headline: 'Prazer em conhecê-lo.',
+      sub: 'Sou um desenvolvedor que se importa com o porquê de cada produto.',
+      body: [
+        'Comecei a programar por curiosidade — queria entender como as coisas que usava no dia a dia funcionavam de verdade. Essa curiosidade se tornou um ofício. Com o tempo, aprendi a me preocupar não só se algo funciona, mas se ele parece certo.',
+        'Meu trabalho vive na interseção de tecnologia e experiência humana. Sou atraído por projetos com um propósito claro além da tela — ferramentas que ajudam pessoas a entender algo, conectar-se com alguém ou agir com base em informações que antes eram inacessíveis.',
+        'Encontro ideias em lugares inesperados. Longas caminhadas. Conversas com pessoas de áreas que não conheço. O mundo natural, especialmente — há algo na forma como os ecossistemas se organizam que continua aparecendo na forma como penso sobre software.'
+      ],
+      quote: 'A melhor interface é aquela que você nem percebe — porque simplesmente funciona.',
+      focusLabel: 'Atualmente focado em',
+      focuses: [
+        'Ferramentas open-source para dados ambientais',
+        'Experiência de desenvolvimento na camada de API',
+        'Pensamento sistêmico em design de produto'
+      ],
+      back: 'Voltar aos projetos'
+    },
+    contact: {
+      label: 'Contato',
+      headline: 'Vamos criar\nalgo juntos.',
+      sub: 'Um projeto, uma ideia, uma pergunta — estou sempre aberto a uma conversa.',
+      emailLabel: 'Envie um email',
+      socialLabel: 'Encontre-me em',
+      status: 'Aberto a projetos freelance e colaborações.'
+    },
+    footer: {
+      prompt: 'Tem um projeto, ideia ou oportunidade?',
+      cta: 'Vamos conversar →',
+      copy: 'Todos os direitos reservados'
+    }
+  }
+};
+
+let currentPage = 'home';
+let currentLang = localStorage.getItem('pf-lang') === 'pt' ? 'pt' : 'en';
+let isDark = localStorage.getItem('pf-dark') === 'true';
+let selectedProject = null;
+
+const main = document.getElementById('main');
+const footer = document.getElementById('siteFooter');
+const projectModal = document.getElementById('projectModal');
+const themeIcon = document.getElementById('themeIcon');
+const languageLabel = document.getElementById('languageLabel');
+
+function icon(name) {
+  const icons = {
+    arrowUp: '↗',
+    arrowRight: '→',
+    external: '↗',
+    github: '⌘',
+    linkedin: 'in',
+    mail: '✉',
+    close: '×'
+  };
+  return icons[name] || '';
+}
+
+function renderSnake(alt) {
+  return `
+    <svg class="snake-illustration" viewBox="0 0 440 520" fill="none" role="img" aria-label="${alt}">
+      <defs>
+        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="var(--primary)" stop-opacity=".12" />
+          <stop offset="100%" stop-color="var(--primary)" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+      <ellipse cx="220" cy="260" rx="190" ry="220" fill="url(#glow)" />
+      <ellipse cx="245" cy="240" rx="145" ry="170" fill="var(--accent)" opacity=".035" />
+      <g opacity=".22" fill="var(--primary)">
+        <ellipse cx="352" cy="100" rx="15" ry="6.5" transform="rotate(-40 352 100)" />
+        <ellipse cx="367" cy="91" rx="12" ry="5.5" transform="rotate(-70 367 91)" />
+        <ellipse cx="340" cy="110" rx="10" ry="4.5" transform="rotate(-15 340 110)" />
+        <line x1="355" y1="99" x2="355" y2="116" stroke="var(--primary)" stroke-width=".9" />
+      </g>
+      <g opacity=".2" fill="var(--primary)">
+        <ellipse cx="102" cy="416" rx="14" ry="6" transform="rotate(22 102 416)" />
+        <ellipse cx="88" cy="407" rx="11" ry="5" transform="rotate(54 88 407)" />
+        <ellipse cx="116" cy="424" rx="9" ry="4" transform="rotate(5 116 424)" />
+        <line x1="104" y1="415" x2="104" y2="430" stroke="var(--primary)" stroke-width=".9" />
+      </g>
+      <circle cx="90" cy="130" r="5.5" fill="var(--primary)" opacity=".14" />
+      <circle cx="362" cy="148" r="7.5" fill="var(--accent)" opacity=".13" />
+      <circle cx="72" cy="354" r="3.5" fill="var(--primary)" opacity=".12" />
+      <circle cx="382" cy="375" r="6" fill="var(--primary)" opacity=".09" />
+      <path d="M172 92 C276 66 368 152 324 242 C282 324 138 338 160 420 C176 482 284 484 318 454" stroke="var(--foreground)" stroke-width="58" stroke-linecap="round" stroke-linejoin="round" opacity=".05" />
+      <path d="M172 92 C276 66 368 152 324 242 C282 324 138 338 160 420 C176 482 284 484 318 454" stroke="var(--primary)" stroke-width="52" stroke-linecap="round" stroke-linejoin="round" opacity=".92" />
+      <path d="M180 88 C280 62 365 148 322 238 C280 320 142 334 163 416 C179 478 284 480 316 452" stroke="var(--primary)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" opacity=".45" />
+      <path d="M172 92 C276 66 368 152 324 242 C282 324 138 338 160 420 C176 482 284 484 318 454" stroke="white" stroke-width="18" stroke-linecap="round" opacity=".065" />
+      <ellipse cx="316" cy="452" rx="33" ry="23" fill="var(--primary)" opacity=".93" transform="rotate(-29 316 452)" />
+      <ellipse cx="333" cy="436" rx="18" ry="13" fill="var(--primary)" opacity=".97" transform="rotate(-29 333 436)" />
+      <ellipse cx="325" cy="457" rx="20" ry="10" fill="var(--primary)" opacity=".55" transform="rotate(-29 325 457)" />
+      <ellipse cx="325" cy="433" rx="8.5" ry="8" fill="var(--foreground)" opacity=".2" />
+      <ellipse cx="325" cy="433" rx="6.5" ry="6.5" fill="var(--accent)" />
+      <ellipse cx="325" cy="433" rx="2.3" ry="5" fill="var(--foreground)" opacity=".9" />
+      <circle cx="328" cy="430" r="2" fill="white" opacity=".65" />
+      <circle cx="337" cy="437" r="1.8" fill="var(--foreground)" opacity=".3" />
+      <path d="M318 444 Q327 448 338 443" stroke="var(--foreground)" stroke-width="1.1" opacity=".22" fill="none" stroke-linecap="round" />
+      <path d="M342 423 L360 406 M360 406 L353 396 M360 406 L367 396" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round" opacity=".9" />
+    </svg>`;
+}
+
+function tagMarkup(items) {
+  return items.map(item => `<span class="tag">${item}</span>`).join('');
+}
+
+function renderHome() {
+  const tr = translations[currentLang];
+  main.innerHTML = `
+    <div class="page-enter">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">${tr.hero.greeting}</p>
+          <h1 class="display-title">${tr.hero.line1}<br>${tr.hero.line2}<br>${tr.hero.line3}</h1>
+          <p class="hero-description">${tr.hero.description}</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-page="home-projects">${tr.hero.cta} <span>${icon('arrowUp')}</span></button>
+            <button class="btn btn-ghost" data-page="contact">${tr.nav.contact}</button>
+          </div>
+        </div>
+        <div class="snake-wrap">${renderSnake(tr.hero.snakeAlt)}</div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">${tr.projects.label}</p>
+            <h2>${tr.projects.heading}</h2>
+          </div>
+          <p class="section-sub">${tr.projects.sub}</p>
+        </div>
+        <div class="project-grid">
+          ${projects.map(renderProjectCard).join('')}
+        </div>
+      </section>
+    </div>
+  `;
+  attachPageLinks();
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('click', () => openProject(Number(card.dataset.project)));
+  });
+  document.querySelectorAll('[data-demo], [data-github]').forEach(link => link.addEventListener('click', e => e.stopPropagation()));
+}
+
+function renderProjectCard(project) {
+  const tr = translations[currentLang].projects;
+  const visibleTags = project.tech.slice(0, 3);
+  if (project.tech.length > 3) visibleTags.push(`+${project.tech.length - 3}`);
+  return `
+    <article class="project-card" data-project="${project.id}" tabindex="0" aria-label="${tr.view}: ${project.name}">
+      <div class="project-image-wrap">
+        <img src="${project.image}" alt="${project.name} — ${project.tagline}" loading="lazy">
+        <div class="project-hover"><span>${tr.view} ${icon('arrowUp')}</span></div>
+        <span class="project-number">${project.num}</span>
+      </div>
+      <div class="project-body">
+        <div>
+          <h3 class="project-title">${project.name}</h3>
+          <p class="project-tagline">${project.tagline}</p>
+        </div>
+        <p class="project-description">${project.description}</p>
+        <div class="tag-list">${tagMarkup(visibleTags)}</div>
+        <div class="project-actions">
+          <a class="text-link" data-demo href="${project.demo}" target="_blank" rel="noopener">${icon('external')} ${tr.demo}</a>
+          <span class="dot">·</span>
+          <a class="text-link secondary" data-github href="${project.github}" target="_blank" rel="noopener">${icon('github')} ${tr.github}</a>
+        </div>
+      </div>
+    </article>`;
+}
+
+function renderAbout() {
+  const tr = translations[currentLang].about;
+  main.innerHTML = `
+    <div class="page-enter">
+      <section class="page-shell">
+        <p class="eyebrow">${tr.label}</p>
+        <h1 class="page-title">${tr.headline}</h1>
+        <p class="page-subtitle">${tr.sub}</p>
+
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=700&h=875&fit=crop&auto=format" alt="A serene natural landscape">
+          </div>
+          <div class="about-copy">
+            ${tr.body.map(p => `<p>${p}</p>`).join('')}
+          </div>
+        </div>
+
+        <blockquote class="quote"><p>“${tr.quote}”</p></blockquote>
+
+        <div>
+          <p class="eyebrow">${tr.focusLabel}</p>
+          <ul class="focus-list">${tr.focuses.map(item => `<li><span class="bullet"></span>${item}</li>`).join('')}</ul>
+        </div>
+
+        <a href="#" class="back-link" data-page="home">← ${tr.back}</a>
+      </section>
+    </div>`;
+  attachPageLinks();
+}
+
+function renderContact() {
+  const tr = translations[currentLang].contact;
+  main.innerHTML = `
+    <div class="page-enter">
+      <section class="page-shell narrow">
+        <p class="eyebrow">${tr.label}</p>
+        <h1 class="page-title" style="white-space: pre-line">${tr.headline}</h1>
+        <p class="page-subtitle">${tr.sub}</p>
+
+        <div class="contact-email">
+          <p class="eyebrow">${tr.emailLabel}</p>
+          <a href="mailto:arthur@example.com"><span aria-hidden="true">✉</span>arthur@example.com</a>
+        </div>
+
+        <div class="contact-divider"></div>
+
+        <div>
+          <p class="eyebrow">${tr.socialLabel}</p>
+          <div class="social-grid">
+            <a class="social-card" href="https://linkedin.com" target="_blank" rel="noopener"><span>in</span><strong>LinkedIn</strong><span>↗</span></a>
+            <a class="social-card" href="https://github.com" target="_blank" rel="noopener"><span>⌘</span><strong>GitHub</strong><span>↗</span></a>
+          </div>
+        </div>
+
+        <p class="status"><span class="status-dot"></span>${tr.status}</p>
+      </section>
+    </div>`;
+  attachPageLinks();
+}
+
+function renderFooter() {
+  const tr = translations[currentLang].footer;
+  footer.innerHTML = `
+    <div class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-prompt">
+          <p>${tr.prompt}</p>
+          <a href="mailto:arthur@example.com">${tr.cta}</a>
+        </div>
+        <div class="socials">
+          <a class="social-link" href="https://linkedin.com" target="_blank" rel="noopener">in LinkedIn</a>
+          <a class="social-link" href="https://github.com" target="_blank" rel="noopener">⌘ GitHub</a>
+          <a class="social-link" href="mailto:arthur@example.com">✉ Email</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© ${new Date().getFullYear()} Arthur · ${tr.copy}</div>
+    </div>`;
+}
+
+function updateActiveNav() {
+  document.querySelectorAll('[data-page="home"], [data-page="about"], [data-page="contact"]').forEach(el => {
+    const isActive = el.dataset.page === currentPage;
+    el.classList.toggle('active', isActive);
+  });
+}
+
+function attachPageLinks() {
+  document.querySelectorAll('[data-page]').forEach(el => {
+    if (el.dataset.bound === 'true') return;
+    el.dataset.bound = 'true';
+    el.addEventListener('click', event => {
+      event.preventDefault();
+      const page = el.dataset.page;
+      if (page === 'home-projects') {
+        currentPage = 'home';
+        renderPage();
+        setTimeout(() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' }), 10);
+        return;
+      }
+      navigate(page || 'home');
+    });
+  });
+}
+
+function navigate(page) {
+  currentPage = page;
+  renderPage();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderPage() {
+  document.documentElement.lang = currentLang === 'en' ? 'en' : 'pt-BR';
+  updateHeaderLabels();
+  if (currentPage === 'home') renderHome();
+  if (currentPage === 'about') renderAbout();
+  if (currentPage === 'contact') renderContact();
+  renderFooter();
+  updateActiveNav();
+}
+
+function updateHeaderLabels() {
+  const tr = translations[currentLang];
+  document.querySelectorAll('.desktop-nav [data-page="home"]').forEach(el => el.textContent = tr.nav.home);
+  document.querySelectorAll('.desktop-nav [data-page="about"]').forEach(el => el.textContent = tr.nav.about);
+  document.querySelectorAll('.desktop-nav [data-page="contact"]').forEach(el => el.textContent = tr.nav.contact);
+  document.querySelector('.brand-name').textContent = tr.name;
+  languageLabel.textContent = tr.lang;
+  document.getElementById('languageButton').setAttribute('aria-label', currentLang === 'en' ? 'Switch to Portuguese' : 'Switch to English');
+  document.getElementById('themeButton').setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+  themeIcon.textContent = isDark ? '☾' : '☼';
+}
+
+function openProject(id) {
+  selectedProject = projects.find(project => project.id === id);
+  if (!selectedProject) return;
+  const tr = translations[currentLang].modal;
+  document.getElementById('modalProjectNumber').textContent = selectedProject.num;
+  document.getElementById('modalProjectName').textContent = selectedProject.name;
+  document.getElementById('modalProjectTagline').textContent = selectedProject.tagline;
+  const modalImage = document.getElementById('modalImage');
+  modalImage.src = selectedProject.image;
+  modalImage.alt = selectedProject.name;
+  document.getElementById('closeModal').setAttribute('aria-label', tr.close);
+  document.getElementById('modalContent').innerHTML = `
+    ${modalSection(tr.challenge, selectedProject.problem)}
+    ${modalSection(tr.approach, selectedProject.solution)}
+    ${modalSection(tr.role, selectedProject.role)}
+    <section class="modal-section">
+      <h3>${tr.features}</h3>
+      <ul class="feature-list">${selectedProject.features.map(feature => `<li><span class="bullet"></span>${feature}</li>`).join('')}</ul>
+    </section>
+    <section class="modal-section">
+      <h3>${tr.tech}</h3>
+      <div class="tech-wrap">${tagMarkup(selectedProject.tech)}</div>
+    </section>
+    <section class="modal-section outcome">
+      <h3>${tr.outcome}</h3>
+      <p>${selectedProject.result}</p>
+    </section>
+    <div class="modal-actions">
+      <a class="btn btn-primary" href="${selectedProject.demo}" target="_blank" rel="noopener">↗ ${tr.demo}</a>
+      <a class="btn btn-ghost" href="${selectedProject.github}" target="_blank" rel="noopener">⌘ ${tr.github}</a>
+    </div>`;
+  projectModal.hidden = false;
+  document.body.classList.add('modal-open');
+  document.getElementById('closeModal').focus();
+}
+
+function modalSection(label, text) {
+  return `<section class="modal-section"><h3>${label}</h3><p>${text}</p></section>`;
+}
+
+function closeProject() {
+  projectModal.hidden = true;
+  document.body.classList.remove('modal-open');
+  selectedProject = null;
+}
+
+document.getElementById('closeModal').addEventListener('click', closeProject);
+projectModal.addEventListener('click', event => {
+  if (event.target === projectModal) closeProject();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !projectModal.hidden) closeProject();
+  if (event.key === 'Enter' && document.activeElement?.classList.contains('project-card')) {
+    openProject(Number(document.activeElement.dataset.project));
+  }
+});
+
+document.getElementById('languageButton').addEventListener('click', () => {
+  currentLang = currentLang === 'en' ? 'pt' : 'en';
+  localStorage.setItem('pf-lang', currentLang);
+  renderPage();
+});
+
+document.getElementById('themeButton').addEventListener('click', () => {
+  isDark = !isDark;
+  document.documentElement.classList.toggle('dark', isDark);
+  localStorage.setItem('pf-dark', String(isDark));
+  updateHeaderLabels();
+});
+
+document.documentElement.classList.toggle('dark', isDark);
+renderPage();
