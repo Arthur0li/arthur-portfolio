@@ -4,120 +4,266 @@ const projects = [
     num: '01',
 
     name: {
-      en: 'EcoTrack',
-      pt: 'EcoTrack'
+        en: 'Pomobeats',
+        pt: 'Pomobeats'
     },
 
     tagline: {
-      en: 'Making climate data human',
-      pt: 'Tornando dados climáticos mais humanos'
+      en: 'Focus sessions with music',
+      pt: 'Sessões de foco acompanhadas de música'
     },
 
     description: {
-      en: 'A dashboard that turns raw environmental numbers into clear stories anyone can understand — no expertise required.',
-      pt: 'Um dashboard que transforma números ambientais brutos em informações claras que qualquer pessoa pode entender — sem exigir conhecimento técnico.'
+      en: 'A productivity project that combines Pomodoro-style focus sessions with a music experience designed to make studying and working more enjoyable.',
+      pt: 'Um projeto de produtividade que combina sessões de foco no estilo Pomodoro com uma experiência musical criada para tornar os momentos de estudo e trabalho mais agradáveis.'
     },
 
     image: '',
 
     problem: {
-      en: "Environmental agencies publish vast datasets — but most citizens can't read them and decision-makers get lost in charts with no narrative context.",
-      pt: 'Agências ambientais publicam grandes volumes de dados, mas a maioria das pessoas não consegue interpretá-los e os responsáveis pelas decisões se perdem em gráficos sem contexto.'
+      en: 'Traditional productivity timers can make focused work feel repetitive and disconnected from the experience of the person using them.',
+      pt: 'Temporizadores de produtividade tradicionais podem tornar o trabalho focado repetitivo e desconectado da experiência de quem está utilizando a ferramenta.'
     },
 
     solution: {
-      en: 'A visual dashboard that translates climate metrics into plain-language summaries and intuitive charts. Designed for people, not data scientists.',
-      pt: 'Um dashboard visual que transforma métricas climáticas em resumos simples e gráficos intuitivos. Projetado para pessoas, não para cientistas de dados.'
+      en: 'Pomobeats combines a focus timer with music and a more engaging interface, creating a single environment for studying or working with concentration.',
+      pt: 'O Pomobeats combina um temporizador de foco com música e uma interface mais envolvente, criando um ambiente único para estudar ou trabalhar com concentração.'
     },
 
     role: {
-      en: 'Solo developer — I owned the full stack: data modeling, API design, and every pixel of the interface.',
-      pt: 'Desenvolvedor solo — fui responsável por toda a solução: modelagem de dados, design da API e toda a interface.'
+      en: 'I designed and developed the project, working on the interface, interactions and overall user experience.',
+      pt: 'Projetei e desenvolvi o projeto, trabalhando na interface, nas interações e na experiência geral do usuário.'
     },
 
     features: {
       en: [
-        'Real-time air quality index',
-        'Historical trend charts',
-        'Location-based alerts',
-        'Shareable report links'
+        'Focus timer',
+        'Music experience',
+        'Session controls',
+        'Responsive interface'
       ],
 
       pt: [
-        'Índice de qualidade do ar em tempo real',
-        'Gráficos de tendências históricas',
-        'Alertas baseados em localização',
-        'Links para relatórios compartilháveis'
+        'Temporizador de foco',
+        'Experiência musical',
+        'Controles de sessão',
+        'Interface responsiva'
       ]
     },
 
-    tech: ['React', 'D3.js', 'Node.js', 'PostgreSQL'],
+    tech: [
+      'Design Ux/UI',       
+      'HTML',
+      'CSS',
+      'JavaScript'
+    ],
 
     result: {
-      en: 'Adopted by 3 environmental NGOs in the pilot phase. Average session time: 4 minutes — 3× above industry baseline for data dashboards.',
-      pt: 'Adotado por 3 ONGs ambientais durante a fase piloto. Tempo médio de sessão: 4 minutos — 3 vezes acima da média do setor para dashboards de dados.'
+      en: 'A personal project focused on combining productivity, music and interface design into a single experience.',
+      pt: 'Um projeto pessoal focado em combinar produtividade, música e design de interface em uma única experiência.'
     },
 
-    demo: '#',
-    github: '#'
+    demo: 'https://arthur0li.github.io/Pomobeats/',
+    github: 'https://github.com/Arthur0li/Pomobeats'
   },
+
   {
     id: 2,
     num: '02',
 
     name: {
-      en: 'Test',
-      pt: 'teste'
+      en: 'Medical Agenda',
+      pt: 'Agenda Médica'
     },
 
     tagline: {
-      en: 'Making climate data human',
-      pt: 'Tornando dados climáticos mais humanos'
+      en: 'A medical scheduling system built with Flask',
+      pt: 'Um sistema de agendamento médico desenvolvido com Flask'
     },
 
     description: {
-      en: 'A dashboard that turns raw environmental numbers into clear stories anyone can understand — no expertise required.',
-      pt: 'Um dashboard que transforma números ambientais brutos em informações claras que qualquer pessoa pode entender — sem exigir conhecimento técnico.'
+      en: 'A web application for managing medical appointments, built by transforming an existing interface into a Flask-based application with backend integration.',
+      pt: 'Uma aplicação web para gerenciamento de consultas médicas, desenvolvida a partir da transformação de uma interface existente em uma aplicação baseada em Flask com integração ao backend.'
     },
 
     image: '',
 
     problem: {
-      en: "Environmental agencies publish vast datasets — but most citizens can't read them and decision-makers get lost in charts with no narrative context.",
-      pt: 'Agências ambientais publicam grandes volumes de dados, mas a maioria das pessoas não consegue interpretá-los e os responsáveis pelas decisões se perdem em gráficos sem contexto.'
+      en: 'The original interface needed to become a functional application capable of handling authentication, appointment data and communication with an API.',
+      pt: 'A interface original precisava se transformar em uma aplicação funcional capaz de lidar com autenticação, dados de consultas e comunicação com uma API.'
     },
 
     solution: {
-      en: 'A visual dashboard that translates climate metrics into plain-language summaries and intuitive charts. Designed for people, not data scientists.',
-      pt: 'Um dashboard visual que transforma métricas climáticas em resumos simples e gráficos intuitivos. Projetado para pessoas, não para cientistas de dados.'
+      en: 'I recreated the interface using Flask and connected it to a backend structure for authentication and appointment management, while using AI-assisted development to accelerate implementation and problem solving.',
+      pt: 'Recriei a interface utilizando Flask e conectei o sistema a uma estrutura de backend para autenticação e gerenciamento de consultas, utilizando desenvolvimento assistido por IA para acelerar a implementação e a resolução de problemas.'
     },
 
     role: {
-      en: 'Solo developer — I owned the full stack: data modeling, API design, and every pixel of the interface.',
-      pt: 'Desenvolvedor solo — fui responsável por toda a solução: modelagem de dados, design da API e toda a interface.'
+      en: 'Developer responsible for the Flask implementation, backend integration, validation, API communication and interface adjustments.',
+      pt: 'Desenvolvedor responsável pela implementação em Flask, integração com o backend, validação, comunicação com a API e ajustes da interface.'
     },
 
     features: {
       en: [
-        'Real-time air quality index',
-        'Historical trend charts',
-        'Location-based alerts',
-        'Shareable report links'
+        'User authentication',
+        'Medical appointment management',
+        'REST API integration',
+        'Appointment data validation'
       ],
 
       pt: [
-        'Índice de qualidade do ar em tempo real',
-        'Gráficos de tendências históricas',
-        'Alertas baseados em localização',
-        'Links para relatórios compartilháveis'
+        'Autenticação de usuários',
+        'Gerenciamento de consultas médicas',
+        'Integração com API REST',
+        'Validação dos dados das consultas'
       ]
     },
 
-    tech: ['React', 'D3.js', 'Node.js', 'PostgreSQL'],
+    tech: [
+      'Python',
+      'Flask',
+      'SQLite',
+      'REST API',
+      'JavaScript',
+      'Vibe Code'
+    ],
 
     result: {
-      en: 'Adopted by 3 environmental NGOs in the pilot phase. Average session time: 4 minutes — 3× above industry baseline for data dashboards.',
-      pt: 'Adotado por 3 ONGs ambientais durante a fase piloto. Tempo médio de sessão: 4 minutos — 3 vezes acima da média do setor para dashboards de dados.'
+      en: 'A practical project for applying Flask, backend integration and AI-assisted development to a complete web application.',
+      pt: 'Um projeto prático para aplicar Flask, integração de backend e desenvolvimento assistido por IA em uma aplicação web completa.'
+    },
+
+    demo: '#',
+    github: '#'
+  },
+
+  {
+    id: 3,
+    num: '03',
+
+    name: {
+      en: 'World Cup Dashboard',
+      pt: 'Painel da Copa do Mundo'
+    },
+
+    tagline: {
+      en: 'Exploring World Cup data with Python',
+      pt: 'Explorando dados da Copa do Mundo com Python'
+    },
+
+    description: {
+      en: 'A data analysis project that transforms World Cup datasets into visual insights using Python and Pandas.',
+      pt: 'Um projeto de análise de dados que transforma conjuntos de dados da Copa do Mundo em informações visuais utilizando Python e Pandas.'
+    },
+
+    image: '',
+
+    problem: {
+      en: 'Raw datasets can be difficult to interpret when presented only as tables and numbers, making it harder to identify patterns and comparisons.',
+      pt: 'Conjuntos de dados brutos podem ser difíceis de interpretar quando apresentados apenas como tabelas e números, dificultando a identificação de padrões e comparações.'
+    },
+
+    solution: {
+      en: 'I used Python and Pandas to explore, organize and analyze World Cup data, turning the results into a more understandable visual dashboard.',
+      pt: 'Utilizei Python e Pandas para explorar, organizar e analisar dados da Copa do Mundo, transformando os resultados em um dashboard visual mais fácil de compreender.'
+    },
+
+    role: {
+      en: 'Data analyst and developer responsible for data cleaning, exploration, analysis and presentation of the results.',
+      pt: 'Analista de dados e desenvolvedor responsável pela limpeza, exploração, análise dos dados e apresentação dos resultados.'
+    },
+
+    features: {
+      en: [
+        'Data exploration with Pandas',
+        'Data cleaning and organization',
+        'Statistical analysis',
+        'Visual data presentation'
+      ],
+
+      pt: [
+        'Exploração de dados com Pandas',
+        'Limpeza e organização dos dados',
+        'Análise estatística',
+        'Apresentação visual dos dados'
+      ]
+    },
+
+    tech: [
+      'Python',
+      'Pandas',
+      'Data Analysis'
+    ],
+
+    result: {
+      en: 'A project focused on practicing data analysis and learning how to communicate information through visual representations.',
+      pt: 'Um projeto focado na prática de análise de dados e no aprendizado de como comunicar informações por meio de representações visuais.'
+    },
+
+    demo: '#',
+    github: '#'
+  },
+
+  {
+    id: 4,
+    num: '04',
+
+    name: {
+      en: 'Custom 404 Page',
+      pt: 'Página 404 Personalizada'
+    },
+
+    tagline: {
+      en: 'Turning an error into an experience',
+      pt: 'Transformando um erro em uma experiência'
+    },
+
+    description: {
+      en: 'A custom 404 page designed to make an otherwise frustrating navigation error feel intentional, visual and consistent with the website.',
+      pt: 'Uma página 404 personalizada criada para transformar um erro de navegação em uma experiência intencional, visual e consistente com o restante do site.'
+    },
+
+    image: '',
+
+    problem: {
+      en: 'A default 404 page provides little context and can make users feel lost when they reach a page that does not exist.',
+      pt: 'Uma página 404 padrão oferece pouco contexto e pode fazer o usuário se sentir perdido ao acessar uma página que não existe.'
+    },
+
+    solution: {
+      en: 'I created a custom visual experience that acknowledges the error while guiding the user back toward useful content.',
+      pt: 'Criei uma experiência visual personalizada que reconhece o erro e, ao mesmo tempo, orienta o usuário de volta para conteúdos úteis.'
+    },
+
+    role: {
+      en: 'I designed and developed the page, focusing on visual communication, hierarchy and the recovery path for the user.',
+      pt: 'Projetei e desenvolvi a página, com foco na comunicação visual, hierarquia das informações e no caminho de recuperação para o usuário.'
+    },
+
+    features: {
+      en: [
+        'Custom visual design',
+        'Clear error communication',
+        'Navigation back to the website',
+        'Responsive layout'
+      ],
+
+      pt: [
+        'Design visual personalizado',
+        'Comunicação clara do erro',
+        'Navegação de volta ao site',
+        'Layout responsivo'
+      ]
+    },
+
+    tech: [
+      'HTML',
+      'CSS',
+    ],
+
+    result: {
+      en: 'A small project focused on demonstrating how interface design can improve even negative moments in a user journey.',
+      pt: 'Um projeto pequeno focado em demonstrar como o design de interface pode melhorar até mesmo momentos negativos na jornada do usuário.'
     },
 
     demo: '#',
