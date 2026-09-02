@@ -2,64 +2,124 @@ const projects = [
   {
     id: 1,
     num: '01',
-    name: 'EcoTrack',
-    tagline: 'Making climate data human',
-    description: 'A dashboard that turns raw environmental numbers into clear stories anyone can understand — no expertise required.',
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&h=675&fit=crop&auto=format',
-    problem: "Environmental agencies publish vast datasets — but most citizens can't read them and decision-makers get lost in charts with no narrative context.",
-    solution: 'A visual dashboard that translates climate metrics into plain-language summaries and intuitive charts. Designed for people, not data scientists.',
-    role: 'Solo developer — I owned the full stack: data modeling, API design, and every pixel of the interface.',
-    features: ['Real-time air quality index', 'Historical trend charts', 'Location-based alerts', 'Shareable report links'],
+
+    name: {
+      en: 'EcoTrack',
+      pt: 'EcoTrack'
+    },
+
+    tagline: {
+      en: 'Making climate data human',
+      pt: 'Tornando dados climáticos mais humanos'
+    },
+
+    description: {
+      en: 'A dashboard that turns raw environmental numbers into clear stories anyone can understand — no expertise required.',
+      pt: 'Um dashboard que transforma números ambientais brutos em informações claras que qualquer pessoa pode entender — sem exigir conhecimento técnico.'
+    },
+
+    image: '',
+
+    problem: {
+      en: "Environmental agencies publish vast datasets — but most citizens can't read them and decision-makers get lost in charts with no narrative context.",
+      pt: 'Agências ambientais publicam grandes volumes de dados, mas a maioria das pessoas não consegue interpretá-los e os responsáveis pelas decisões se perdem em gráficos sem contexto.'
+    },
+
+    solution: {
+      en: 'A visual dashboard that translates climate metrics into plain-language summaries and intuitive charts. Designed for people, not data scientists.',
+      pt: 'Um dashboard visual que transforma métricas climáticas em resumos simples e gráficos intuitivos. Projetado para pessoas, não para cientistas de dados.'
+    },
+
+    role: {
+      en: 'Solo developer — I owned the full stack: data modeling, API design, and every pixel of the interface.',
+      pt: 'Desenvolvedor solo — fui responsável por toda a solução: modelagem de dados, design da API e toda a interface.'
+    },
+
+    features: {
+      en: [
+        'Real-time air quality index',
+        'Historical trend charts',
+        'Location-based alerts',
+        'Shareable report links'
+      ],
+
+      pt: [
+        'Índice de qualidade do ar em tempo real',
+        'Gráficos de tendências históricas',
+        'Alertas baseados em localização',
+        'Links para relatórios compartilháveis'
+      ]
+    },
+
     tech: ['React', 'D3.js', 'Node.js', 'PostgreSQL'],
-    result: 'Adopted by 3 environmental NGOs in the pilot phase. Average session time: 4 minutes — 3× above industry baseline for data dashboards.',
+
+    result: {
+      en: 'Adopted by 3 environmental NGOs in the pilot phase. Average session time: 4 minutes — 3× above industry baseline for data dashboards.',
+      pt: 'Adotado por 3 ONGs ambientais durante a fase piloto. Tempo médio de sessão: 4 minutos — 3 vezes acima da média do setor para dashboards de dados.'
+    },
+
     demo: '#',
     github: '#'
   },
   {
     id: 2,
     num: '02',
-    name: 'Roots',
-    tagline: 'Growing community, one plot at a time',
-    description: 'An app that replaces the chaos of group chats and paper lists in urban community gardens with something that actually works.',
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=675&fit=crop&auto=format',
-    problem: 'Forty-member community gardens were running on WhatsApp threads and handwritten notebooks. Coordination was exhausting and things kept falling through the cracks.',
-    solution: 'A mobile-first app with a shared planting calendar, tool-lending tracker, and harvest log. Warm and approachable — not another enterprise product.',
-    role: 'Lead developer and UX designer. I ran user interviews with real garden members and iterated until it felt genuinely human.',
-    features: ['Visual plot map', 'Shared tool calendar', 'Harvest log with photos', 'Member directory'],
-    tech: ['React Native', 'Firebase', 'TypeScript', 'Expo'],
-    result: 'Coordination overhead dropped 60%. Members described it as the first garden app that actually feels like a garden.',
-    demo: '#',
-    github: '#'
-  },
-  {
-    id: 3,
-    num: '03',
-    name: 'Clearwater',
-    tagline: 'Drinking water you can trust',
-    description: "A public tool that maps water quality reports across municipalities and alerts residents when something's wrong.",
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=675&fit=crop&auto=format',
-    problem: "Water safety data sits in PDFs across a dozen agencies. There's no way for ordinary people to know if their tap water is at risk today.",
-    solution: 'I unified 5 data sources into one live map. Residents subscribe to alerts for their area and can browse years of historical records in seconds.',
-    role: 'Full-stack developer. I built the scrapers, the backend, and the map interface — start to finish, alone, over six weeks.',
-    features: ['Interactive quality map', 'Contamination alerts by area', 'Historical records by district', 'Open public API'],
-    tech: ['Next.js', 'Python', 'Leaflet.js', 'SQLite', 'Scrapy'],
-    result: 'Indexed 12,000+ water reports. Featured in a regional outlet as a community resource.',
-    demo: '#',
-    github: '#'
-  },
-  {
-    id: 4,
-    num: '04',
-    name: 'Canopy',
-    tagline: 'Forest data, simplified',
-    description: 'An open API that gives researchers clean, unified access to Amazon deforestation data — free, versioned, and ready to use.',
-    image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&h=675&fit=crop&auto=format',
-    problem: 'Scientists studying deforestation waste weeks wrangling incompatible datasets from different satellites and sensors before they can even start their research.',
-    solution: 'One REST API that normalizes the data, returns GeoJSON, and documents every endpoint clearly. Documentation-first, versioned, free for researchers.',
-    role: 'Backend architect and API designer. I made format decisions that balance scientific precision with real developer experience.',
-    features: ['Unified satellite data layer', 'GeoJSON-ready endpoints', 'Rate-limited public access', 'Full researcher tier'],
-    tech: ['FastAPI', 'Python', 'PostGIS', 'Docker', 'AWS Lambda'],
-    result: 'Two university research teams use it as their primary source. Processing 500+ calls per day.',
+
+    name: {
+      en: 'Test',
+      pt: 'teste'
+    },
+
+    tagline: {
+      en: 'Making climate data human',
+      pt: 'Tornando dados climáticos mais humanos'
+    },
+
+    description: {
+      en: 'A dashboard that turns raw environmental numbers into clear stories anyone can understand — no expertise required.',
+      pt: 'Um dashboard que transforma números ambientais brutos em informações claras que qualquer pessoa pode entender — sem exigir conhecimento técnico.'
+    },
+
+    image: '',
+
+    problem: {
+      en: "Environmental agencies publish vast datasets — but most citizens can't read them and decision-makers get lost in charts with no narrative context.",
+      pt: 'Agências ambientais publicam grandes volumes de dados, mas a maioria das pessoas não consegue interpretá-los e os responsáveis pelas decisões se perdem em gráficos sem contexto.'
+    },
+
+    solution: {
+      en: 'A visual dashboard that translates climate metrics into plain-language summaries and intuitive charts. Designed for people, not data scientists.',
+      pt: 'Um dashboard visual que transforma métricas climáticas em resumos simples e gráficos intuitivos. Projetado para pessoas, não para cientistas de dados.'
+    },
+
+    role: {
+      en: 'Solo developer — I owned the full stack: data modeling, API design, and every pixel of the interface.',
+      pt: 'Desenvolvedor solo — fui responsável por toda a solução: modelagem de dados, design da API e toda a interface.'
+    },
+
+    features: {
+      en: [
+        'Real-time air quality index',
+        'Historical trend charts',
+        'Location-based alerts',
+        'Shareable report links'
+      ],
+
+      pt: [
+        'Índice de qualidade do ar em tempo real',
+        'Gráficos de tendências históricas',
+        'Alertas baseados em localização',
+        'Links para relatórios compartilháveis'
+      ]
+    },
+
+    tech: ['React', 'D3.js', 'Node.js', 'PostgreSQL'],
+
+    result: {
+      en: 'Adopted by 3 environmental NGOs in the pilot phase. Average session time: 4 minutes — 3× above industry baseline for data dashboards.',
+      pt: 'Adotado por 3 ONGs ambientais durante a fase piloto. Tempo médio de sessão: 4 minutos — 3 vezes acima da média do setor para dashboards de dados.'
+    },
+
     demo: '#',
     github: '#'
   }
@@ -313,16 +373,16 @@ function renderProjectCard(project) {
   return `
     <article class="project-card" data-project="${project.id}" tabindex="0" aria-label="${tr.view}: ${project.name}">
       <div class="project-image-wrap">
-        <img src="${project.image}" alt="${project.name} — ${project.tagline}" loading="lazy">
+        <img src="${project.image}" alt="${project.name[currentLang]} — ${project.tagline[currentLang]}" loading="lazy">
         <div class="project-hover"><span>${tr.view} ${icon('arrowUp')}</span></div>
         <span class="project-number">${project.num}</span>
       </div>
       <div class="project-body">
         <div>
-          <h3 class="project-title">${project.name}</h3>
-          <p class="project-tagline">${project.tagline}</p>
+          <h3 class="project-title">${project.name[currentLang]}</h3>
+          <p class="project-tagline">${project.tagline[currentLang]}</p>
         </div>
-        <p class="project-description">${project.description}</p>
+        <p class="project-description">${project.description[currentLang]}</p>
         <div class="tag-list">${tagMarkup(visibleTags)}</div>
         <div class="project-actions">
           <a class="text-link" data-demo href="${project.demo}" target="_blank" rel="noopener">${icon('external')} ${tr.demo}</a>
@@ -468,35 +528,94 @@ function updateHeaderLabels() {
 
 function openProject(id) {
   selectedProject = projects.find(project => project.id === id);
+
   if (!selectedProject) return;
+
   const tr = translations[currentLang].modal;
+
   document.getElementById('modalProjectNumber').textContent = selectedProject.num;
-  document.getElementById('modalProjectName').textContent = selectedProject.name;
-  document.getElementById('modalProjectTagline').textContent = selectedProject.tagline;
+
+  document.getElementById('modalProjectName').textContent =
+    selectedProject.name[currentLang];
+
+  document.getElementById('modalProjectTagline').textContent =
+    selectedProject.tagline[currentLang];
+
   const modalImage = document.getElementById('modalImage');
+
   modalImage.src = selectedProject.image;
-  modalImage.alt = selectedProject.name;
-  document.getElementById('closeModal').setAttribute('aria-label', tr.close);
+
+  modalImage.alt =
+    `${selectedProject.name[currentLang]} — ${selectedProject.tagline[currentLang]}`;
+
+  document.getElementById('closeModal').setAttribute(
+    'aria-label',
+    tr.close
+  );
+
   document.getElementById('modalContent').innerHTML = `
-    ${modalSection(tr.challenge, selectedProject.problem)}
-    ${modalSection(tr.approach, selectedProject.solution)}
-    ${modalSection(tr.role, selectedProject.role)}
+    ${modalSection(
+      tr.challenge,
+      selectedProject.problem[currentLang]
+    )}
+
+    ${modalSection(
+      tr.approach,
+      selectedProject.solution[currentLang]
+    )}
+
+    ${modalSection(
+      tr.role,
+      selectedProject.role[currentLang]
+    )}
+
     <section class="modal-section">
       <h3>${tr.features}</h3>
-      <ul class="feature-list">${selectedProject.features.map(feature => `<li><span class="bullet"></span>${feature}</li>`).join('')}</ul>
+
+      <ul class="feature-list">
+        ${selectedProject.features[currentLang]
+          .map(feature =>
+            `<li><span class="bullet"></span>${feature}</li>`
+          )
+          .join('')}
+      </ul>
     </section>
+
     <section class="modal-section">
       <h3>${tr.tech}</h3>
-      <div class="tech-wrap">${tagMarkup(selectedProject.tech)}</div>
+
+      <div class="tech-wrap">
+        ${tagMarkup(selectedProject.tech)}
+      </div>
     </section>
+
     <section class="modal-section outcome">
       <h3>${tr.outcome}</h3>
-      <p>${selectedProject.result}</p>
+
+      <p>${selectedProject.result[currentLang]}</p>
     </section>
+
     <div class="modal-actions">
-      <a class="btn btn-primary" href="${selectedProject.demo}" target="_blank" rel="noopener">↗ ${tr.demo}</a>
-      <a class="btn btn-ghost" href="${selectedProject.github}" target="_blank" rel="noopener">⌘ ${tr.github}</a>
-    </div>`;
+      <a
+        class="btn btn-primary"
+        href="${selectedProject.demo}"
+        target="_blank"
+        rel="noopener"
+      >
+        ↗ ${tr.demo}
+      </a>
+
+      <a
+        class="btn btn-ghost"
+        href="${selectedProject.github}"
+        target="_blank"
+        rel="noopener"
+      >
+        ⌘ ${tr.github}
+      </a>
+    </div>
+  `;
+
   projectModal.hidden = false;
   document.body.classList.add('modal-open');
   document.getElementById('closeModal').focus();
