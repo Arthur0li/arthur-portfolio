@@ -81,7 +81,7 @@ img { display: block; max-width: 100%; }
 }
 
 .desktop-nav { display: flex; gap: 2px; }
-.nav-link, .mobile-nav-link, .control-button, .icon-button {
+.nav-link, .control-button, .icon-button {
   border: 0;
   background: transparent;
   color: var(--muted-foreground);
@@ -92,7 +92,7 @@ img { display: block; max-width: 100%; }
   border-radius: 9px;
   font-size: 14px;
 }
-.nav-link:hover, .mobile-nav-link:hover, .control-button:hover, .icon-button:hover {
+.nav-link:hover, .control-button:hover, .icon-button:hover {
   color: var(--foreground);
   background: var(--muted);
 }
@@ -116,10 +116,6 @@ img { display: block; max-width: 100%; }
 .logo-path { stroke: var(--primary); stroke-width: 2; stroke-linecap: round; }
 .control-button { display: inline-flex; align-items: center; gap: 6px; padding: 8px; border-radius: 8px; font-size: 12px; font-weight: 600; }
 .icon-button { width: 34px; height: 34px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 20px; line-height: 1; }
-.mobile-menu-button { display: none; }
-.mobile-nav { padding: 8px 20px 16px; border-top: 1px solid var(--border); }
-.mobile-nav-link { display: block; width: 100%; text-align: left; padding: 11px 10px; border-radius: 8px; }
-.mobile-nav-link.active { color: var(--primary); font-weight: 600; }
 
 main { min-height: 55vh; }
 .page-enter { animation: pageEnter .22s ease-out; }
@@ -301,7 +297,6 @@ main { min-height: 55vh; }
 @media (max-width: 720px) {
   .container { width: min(100% - 28px, 1152px); }
   .desktop-nav { display: none; }
-  .mobile-menu-button { display: inline-flex; }
   .brand-name, .separator { display: none; }
   .header-inner { min-height: 56px; }
   .hero, .section, .footer-inner, .footer-bottom, .page-shell, .page-shell.narrow { width: min(100% - 28px, 1152px); }
