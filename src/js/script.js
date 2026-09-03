@@ -133,8 +133,8 @@ const projects = [
       pt: 'Um projeto prático para aplicar Flask, integração de backend e desenvolvimento assistido por IA em uma aplicação web completa.'
     },
 
-    demo: '#',
-    github: '#'
+    demo: 'https://github.com/Arthur0li/agenda-medica-flask',
+    github: 'https://github.com/Arthur0li/agenda-medica-flask'
   },
 
   {
@@ -200,8 +200,8 @@ const projects = [
       pt: 'Um projeto focado na prática de análise de dados e no aprendizado de como comunicar informações por meio de representações visuais.'
     },
 
-    demo: '#',
-    github: '#'
+    demo: 'https://github.com/Arthur0li/world-cup-analytics',
+    github: 'https://github.com/Arthur0li/world-cup-analytics'
   },
 
   {
@@ -266,8 +266,8 @@ const projects = [
       pt: 'Um projeto pequeno focado em demonstrar como o design de interface pode melhorar até mesmo momentos negativos na jornada do usuário.'
     },
 
-    demo: '#',
-    github: '#'
+    demo: 'https://arthur0li.github.io/404-page/',
+    github: 'https://github.com/Arthur0li/404-page'
   }
 ];
 
