@@ -547,7 +547,7 @@ function renderContact() {
 
         <div class="contact-email">
           <p class="eyebrow">${tr.emailLabel}</p>
-          <a href="mailto:arthur@example.com"><span aria-hidden="true">✉</span>arthur@example.com</a>
+          <a href="mailto:artholi321@gmail.com"><span aria-hidden="true">✉</span>artholi321@gmail.com</a>
         </div>
 
         <div class="contact-divider"></div>
@@ -573,12 +573,12 @@ function renderFooter() {
       <div class="footer-inner">
         <div class="footer-prompt">
           <p>${tr.prompt}</p>
-          <a href="mailto:arthur@example.com">${tr.cta}</a>
+          <a href="mailto:artholi321@gmail.com">${tr.cta}</a>
         </div>
         <div class="socials">
           <a class="social-link" href="https://linkedin.com" target="_blank" rel="noopener">in LinkedIn</a>
           <a class="social-link" href="https://github.com" target="_blank" rel="noopener">⌘ GitHub</a>
-          <a class="social-link" href="mailto:arthur@example.com">✉ Email</a>
+          <a class="social-link" href="mailto:artholi321@gmail.com">✉ Email</a>
         </div>
       </div>
       <div class="footer-bottom">© ${new Date().getFullYear()} Arthur · ${tr.copy}</div>
