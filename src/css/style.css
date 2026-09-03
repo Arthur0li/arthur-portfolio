@@ -175,8 +175,28 @@ main { min-height: 55vh; }
 .btn-ghost { background: transparent; color: var(--foreground); border-color: var(--border); }
 .btn-ghost:hover { background: var(--muted); }
 
-.snake-wrap { display: grid; place-items: center; min-height: 460px; }
-.snake-illustration { width: min(360px, 100%); aspect-ratio: 440 / 520; }
+.snake-wrap {
+    display: grid;
+    place-items: center;
+    min-height: 460px;
+}
+
+.snake-image {
+    grid-area: 1 / 1;
+    width: min(360px, 100%);
+}
+
+.snake-image-dark {
+    display: none;
+}
+
+html.dark .snake-image-light {
+    display: none;
+}
+
+html.dark .snake-image-dark {
+    display: block;
+}
 
 .section {
   width: min(1152px, calc(100% - 40px));
@@ -288,8 +308,6 @@ main { min-height: 55vh; }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; padding-top: 62px; }
-  .snake-wrap { order: -1; min-height: auto; }
-  .snake-illustration { width: min(300px, 65vw); }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .about-image { max-width: 440px; }
 }

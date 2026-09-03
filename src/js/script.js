@@ -283,7 +283,6 @@ const translations = {
       line3: 'experiences',
       description: 'I build software that solves real problems — with care for the people who will use it.',
       cta: 'Explore my work',
-      snakeAlt: 'Stylised snake illustration — a personal emblem'
     },
     projects: {
       label: 'Selected Work',
@@ -347,7 +346,6 @@ const translations = {
       line3: 'digitais',
       description: 'Crio software que resolve problemas reais — com cuidado pelas pessoas que o utilizam.',
       cta: 'Explorar projetos',
-      snakeAlt: 'Ilustração estilizada de cobra — emblema pessoal'
     },
     projects: {
       label: 'Trabalhos Selecionados',
@@ -426,50 +424,6 @@ function icon(name) {
   return icons[name] || '';
 }
 
-function renderSnake(alt) {
-  return `
-    <svg class="snake-illustration" viewBox="0 0 440 520" fill="none" role="img" aria-label="${alt}">
-      <defs>
-        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="var(--primary)" stop-opacity=".12" />
-          <stop offset="100%" stop-color="var(--primary)" stop-opacity="0" />
-        </radialGradient>
-      </defs>
-      <ellipse cx="220" cy="260" rx="190" ry="220" fill="url(#glow)" />
-      <ellipse cx="245" cy="240" rx="145" ry="170" fill="var(--accent)" opacity=".035" />
-      <g opacity=".22" fill="var(--primary)">
-        <ellipse cx="352" cy="100" rx="15" ry="6.5" transform="rotate(-40 352 100)" />
-        <ellipse cx="367" cy="91" rx="12" ry="5.5" transform="rotate(-70 367 91)" />
-        <ellipse cx="340" cy="110" rx="10" ry="4.5" transform="rotate(-15 340 110)" />
-        <line x1="355" y1="99" x2="355" y2="116" stroke="var(--primary)" stroke-width=".9" />
-      </g>
-      <g opacity=".2" fill="var(--primary)">
-        <ellipse cx="102" cy="416" rx="14" ry="6" transform="rotate(22 102 416)" />
-        <ellipse cx="88" cy="407" rx="11" ry="5" transform="rotate(54 88 407)" />
-        <ellipse cx="116" cy="424" rx="9" ry="4" transform="rotate(5 116 424)" />
-        <line x1="104" y1="415" x2="104" y2="430" stroke="var(--primary)" stroke-width=".9" />
-      </g>
-      <circle cx="90" cy="130" r="5.5" fill="var(--primary)" opacity=".14" />
-      <circle cx="362" cy="148" r="7.5" fill="var(--accent)" opacity=".13" />
-      <circle cx="72" cy="354" r="3.5" fill="var(--primary)" opacity=".12" />
-      <circle cx="382" cy="375" r="6" fill="var(--primary)" opacity=".09" />
-      <path d="M172 92 C276 66 368 152 324 242 C282 324 138 338 160 420 C176 482 284 484 318 454" stroke="var(--foreground)" stroke-width="58" stroke-linecap="round" stroke-linejoin="round" opacity=".05" />
-      <path d="M172 92 C276 66 368 152 324 242 C282 324 138 338 160 420 C176 482 284 484 318 454" stroke="var(--primary)" stroke-width="52" stroke-linecap="round" stroke-linejoin="round" opacity=".92" />
-      <path d="M180 88 C280 62 365 148 322 238 C280 320 142 334 163 416 C179 478 284 480 316 452" stroke="var(--primary)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" opacity=".45" />
-      <path d="M172 92 C276 66 368 152 324 242 C282 324 138 338 160 420 C176 482 284 484 318 454" stroke="white" stroke-width="18" stroke-linecap="round" opacity=".065" />
-      <ellipse cx="316" cy="452" rx="33" ry="23" fill="var(--primary)" opacity=".93" transform="rotate(-29 316 452)" />
-      <ellipse cx="333" cy="436" rx="18" ry="13" fill="var(--primary)" opacity=".97" transform="rotate(-29 333 436)" />
-      <ellipse cx="325" cy="457" rx="20" ry="10" fill="var(--primary)" opacity=".55" transform="rotate(-29 325 457)" />
-      <ellipse cx="325" cy="433" rx="8.5" ry="8" fill="var(--foreground)" opacity=".2" />
-      <ellipse cx="325" cy="433" rx="6.5" ry="6.5" fill="var(--accent)" />
-      <ellipse cx="325" cy="433" rx="2.3" ry="5" fill="var(--foreground)" opacity=".9" />
-      <circle cx="328" cy="430" r="2" fill="white" opacity=".65" />
-      <circle cx="337" cy="437" r="1.8" fill="var(--foreground)" opacity=".3" />
-      <path d="M318 444 Q327 448 338 443" stroke="var(--foreground)" stroke-width="1.1" opacity=".22" fill="none" stroke-linecap="round" />
-      <path d="M342 423 L360 406 M360 406 L353 396 M360 406 L367 396" stroke="var(--accent)" stroke-width="2.4" stroke-linecap="round" opacity=".9" />
-    </svg>`;
-}
-
 function tagMarkup(items) {
   return items.map(item => `<span class="tag">${item}</span>`).join('');
 }
@@ -487,7 +441,20 @@ function renderHome() {
             <button class="btn btn-primary" data-page="home-projects">${tr.hero.cta} <span>${icon('arrowUp')}</span></button>
           </div>
         </div>
-        <div class="snake-wrap">${renderSnake(tr.hero.snakeAlt)}</div>
+        <div class="snake-wrap">
+          <img
+              class="snake-image snake-image-light"
+              src="src/img/light.png"
+              alt="Ilustração de uma cobra, elemento visual do portfólio"
+          >
+
+          <img
+              class="snake-image snake-image-dark"
+              src="src/img/dark.png"
+              alt=""
+              aria-hidden="true"
+          >
+      </div>
       </section>
 
       <section class="section" id="work">
