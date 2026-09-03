@@ -64,7 +64,7 @@ const projects = [
     },
 
     demo: 'https://arthur0li.github.io/Pomobeats/',
-    github: 'https://github.com/Arthur0li/Pomobeats'
+    github: 'https://github.com/Arthur0li/Arthur0li/Pomobeats'
   },
 
   {
@@ -133,8 +133,8 @@ const projects = [
       pt: 'Um projeto prático para aplicar Flask, integração de backend e desenvolvimento assistido por IA em uma aplicação web completa.'
     },
 
-    demo: 'https://github.com/Arthur0li/agenda-medica-flask',
-    github: 'https://github.com/Arthur0li/agenda-medica-flask'
+    demo: 'https://github.com/Arthur0li/Arthur0li/agenda-medica-flask',
+    github: 'https://github.com/Arthur0li/Arthur0li/agenda-medica-flask'
   },
 
   {
@@ -200,8 +200,8 @@ const projects = [
       pt: 'Um projeto focado na prática de análise de dados e no aprendizado de como comunicar informações por meio de representações visuais.'
     },
 
-    demo: 'https://github.com/Arthur0li/world-cup-analytics',
-    github: 'https://github.com/Arthur0li/world-cup-analytics'
+    demo: 'https://github.com/Arthur0li/Arthur0li/world-cup-analytics',
+    github: 'https://github.com/Arthur0li/Arthur0li/world-cup-analytics'
   },
 
   {
@@ -267,7 +267,7 @@ const projects = [
     },
 
     demo: 'https://arthur0li.github.io/404-page/',
-    github: 'https://github.com/Arthur0li/404-page'
+    github: 'https://github.com/Arthur0li/Arthur0li/404-page'
   }
 ];
 
@@ -555,8 +555,8 @@ function renderContact() {
         <div>
           <p class="eyebrow">${tr.socialLabel}</p>
           <div class="social-grid">
-            <a class="social-card" href="https://linkedin.com" target="_blank" rel="noopener"><span>in</span><strong>LinkedIn</strong><span>↗</span></a>
-            <a class="social-card" href="https://github.com" target="_blank" rel="noopener"><span>⌘</span><strong>GitHub</strong><span>↗</span></a>
+            <a class="social-card" href="https://www.linkedin.com/in/arthur-oliveira-21ab8a236/" target="_blank" rel="noopener"><span>in</span><strong>LinkedIn</strong><span>↗</span></a>
+            <a class="social-card" href="https://github.com/Arthur0li" target="_blank" rel="noopener"><span>⌘</span><strong>GitHub</strong><span>↗</span></a>
           </div>
         </div>
 
@@ -576,8 +576,8 @@ function renderFooter() {
           <a href="mailto:artholi321@gmail.com">${tr.cta}</a>
         </div>
         <div class="socials">
-          <a class="social-link" href="https://linkedin.com" target="_blank" rel="noopener">in LinkedIn</a>
-          <a class="social-link" href="https://github.com" target="_blank" rel="noopener">⌘ GitHub</a>
+          <a class="social-link" href="https://www.linkedin.com/in/arthur-oliveira-21ab8a236/" target="_blank" rel="noopener">in LinkedIn</a>
+          <a class="social-link" href="https://github.com/Arthur0li" target="_blank" rel="noopener">⌘ GitHub</a>
           <a class="social-link" href="mailto:artholi321@gmail.com">✉ Email</a>
         </div>
       </div>
