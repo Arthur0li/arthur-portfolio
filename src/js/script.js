@@ -485,7 +485,6 @@ function renderHome() {
           <p class="hero-description">${tr.hero.description}</p>
           <div class="hero-actions">
             <button class="btn btn-primary" data-page="home-projects">${tr.hero.cta} <span>${icon('arrowUp')}</span></button>
-            <button class="btn btn-ghost" data-page="contact">${tr.nav.contact}</button>
           </div>
         </div>
         <div class="snake-wrap">${renderSnake(tr.hero.snakeAlt)}</div>
