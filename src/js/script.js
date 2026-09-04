@@ -18,7 +18,7 @@ const projects = [
       pt: 'Um projeto de produtividade que combina sessões de foco no estilo Pomodoro com uma experiência musical criada para tornar os momentos de estudo e trabalho mais agradáveis.'
     },
 
-    image: '',
+    image: 'src/img/pomobeats_print.png',
 
     problem: {
       en: 'Traditional productivity timers can make focused work feel repetitive and disconnected from the experience of the person using them.',
@@ -64,7 +64,7 @@ const projects = [
     },
 
     demo: 'https://arthur0li.github.io/Pomobeats/',
-    github: 'https://github.com/Arthur0li/Arthur0li/Pomobeats'
+    github: 'https://github.com/Arthur0li/Pomobeats'
   },
 
   {
@@ -86,7 +86,7 @@ const projects = [
       pt: 'Uma aplicação web para gerenciamento de consultas médicas, desenvolvida a partir da transformação de uma interface existente em uma aplicação baseada em Flask com integração ao backend.'
     },
 
-    image: '',
+    image: 'src/img/flask_print.png',
 
     problem: {
       en: 'The original interface needed to become a functional application capable of handling authentication, appointment data and communication with an API.',
@@ -133,8 +133,8 @@ const projects = [
       pt: 'Um projeto prático para aplicar Flask, integração de backend e desenvolvimento assistido por IA em uma aplicação web completa.'
     },
 
-    demo: 'https://github.com/Arthur0li/Arthur0li/agenda-medica-flask',
-    github: 'https://github.com/Arthur0li/Arthur0li/agenda-medica-flask'
+    demo: 'https://github.com/Arthur0li/agenda-medica-flask',
+    github: 'https://github.com/Arthur0li/agenda-medica-flask'
   },
 
   {
@@ -156,7 +156,7 @@ const projects = [
       pt: 'Um projeto de análise de dados que transforma conjuntos de dados da Copa do Mundo em informações visuais utilizando Python e Pandas.'
     },
 
-    image: '',
+    image: 'src/img/wc_print.jpg',
 
     problem: {
       en: 'Raw datasets can be difficult to interpret when presented only as tables and numbers, making it harder to identify patterns and comparisons.',
@@ -200,8 +200,8 @@ const projects = [
       pt: 'Um projeto focado na prática de análise de dados e no aprendizado de como comunicar informações por meio de representações visuais.'
     },
 
-    demo: 'https://github.com/Arthur0li/Arthur0li/world-cup-analytics',
-    github: 'https://github.com/Arthur0li/Arthur0li/world-cup-analytics'
+    demo: 'https://github.com/Arthur0li/world-cup-analytics',
+    github: 'https://github.com/Arthur0li/world-cup-analytics'
   },
 
   {
@@ -223,7 +223,7 @@ const projects = [
       pt: 'Uma página 404 personalizada criada para transformar um erro de navegação em uma experiência intencional, visual e consistente com o restante do site.'
     },
 
-    image: '',
+    image: 'src/img/404_print.jpg',
 
     problem: {
       en: 'A default 404 page provides little context and can make users feel lost when they reach a page that does not exist.',
@@ -267,7 +267,7 @@ const projects = [
     },
 
     demo: 'https://arthur0li.github.io/404-page/',
-    github: 'https://github.com/Arthur0li/Arthur0li/404-page'
+    github: 'https://github.com/Arthur0li/404-page'
   }
 ];
 
