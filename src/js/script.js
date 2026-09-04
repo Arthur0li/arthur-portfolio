@@ -4,8 +4,8 @@ const projects = [
     num: '01',
 
     name: {
-        en: 'Pomobeats',
-        pt: 'Pomobeats'
+      en: 'Pomobeats',
+      pt: 'Pomobeats'
     },
 
     tagline: {
@@ -52,7 +52,7 @@ const projects = [
     },
 
     tech: [
-      'Design Ux/UI',       
+      'Design Ux/UI',
       'HTML',
       'CSS',
       'JavaScript'
@@ -416,7 +416,6 @@ function icon(name) {
     arrowUp: '↗',
     arrowRight: '→',
     external: '↗',
-    github: '⌘',
     linkedin: 'in',
     mail: '✉',
     close: '×'
@@ -555,7 +554,29 @@ function renderContact() {
           <p class="eyebrow">${tr.socialLabel}</p>
           <div class="social-grid">
             <a class="social-card" href="https://www.linkedin.com/in/arthur-oliveira-21ab8a236/" target="_blank" rel="noopener"><span>in</span><strong>LinkedIn</strong><span>↗</span></a>
-            <a class="social-card" href="https://github.com/Arthur0li" target="_blank" rel="noopener"><span>⌘</span><strong>GitHub</strong><span>↗</span></a>
+            <a
+                class="social-card"
+                href="https://github.com/Arthur0li"
+                target="_blank"
+                rel="noopener"
+            >
+                <img
+                    class="social-icon social-icon-light"
+                    src="src/img/icons/github_light.png"
+                    alt=""
+                >
+
+                <img
+                    class="social-icon social-icon-dark"
+                    src="src/img/icons/github_dark.png"
+                    alt=""
+                    aria-hidden="true"
+                >
+
+                <strong>GitHub</strong>
+
+                <span>↗</span>
+            </a>
           </div>
         </div>
 
@@ -576,8 +597,46 @@ function renderFooter() {
         </div>
         <div class="socials">
           <a class="social-link" href="https://www.linkedin.com/in/arthur-oliveira-21ab8a236/" target="_blank" rel="noopener">in LinkedIn</a>
-          <a class="social-link" href="https://github.com/Arthur0li" target="_blank" rel="noopener">⌘ GitHub</a>
-          <a class="social-link" href="mailto:artholi321@gmail.com">✉ Email</a>
+          <a
+              class="social-link"
+              href="https://github.com/Arthur0li"
+              target="_blank"
+              rel="noopener"
+          >
+              <img
+                  class="social-icon social-icon-light"
+                  src="src/img/icons/github_light.png"
+                  alt=""
+              >
+
+              <img
+                  class="social-icon social-icon-dark"
+                  src="src/img/icons/github_dark.png"
+                  alt=""
+                  aria-hidden="true"
+              >
+
+              <span>GitHub</span>
+          </a>
+          <a
+              class="social-link"
+              href="mailto:artholi321@gmail.com"
+          >
+              <img
+                  class="social-icon social-icon-light"
+                  src="src/img/icons/email_light.png"
+                  alt=""
+              >
+
+              <img
+                  class="social-icon social-icon-dark"
+                  src="src/img/icons/email_dark.png"
+                  alt=""
+                  aria-hidden="true"
+              >
+
+              <span>Email</span>
+          </a>
         </div>
       </div>
       <div class="footer-bottom">© ${new Date().getFullYear()} Arthur · ${tr.copy}</div>
@@ -664,29 +723,29 @@ function openProject(id) {
 
   document.getElementById('modalContent').innerHTML = `
     ${modalSection(
-      tr.challenge,
-      selectedProject.problem[currentLang]
-    )}
+    tr.challenge,
+    selectedProject.problem[currentLang]
+  )}
 
     ${modalSection(
-      tr.approach,
-      selectedProject.solution[currentLang]
-    )}
+    tr.approach,
+    selectedProject.solution[currentLang]
+  )}
 
     ${modalSection(
-      tr.role,
-      selectedProject.role[currentLang]
-    )}
+    tr.role,
+    selectedProject.role[currentLang]
+  )}
 
     <section class="modal-section">
       <h3>${tr.features}</h3>
 
       <ul class="feature-list">
         ${selectedProject.features[currentLang]
-          .map(feature =>
-            `<li><span class="bullet"></span>${feature}</li>`
-          )
-          .join('')}
+      .map(feature =>
+        `<li><span class="bullet"></span>${feature}</li>`
+      )
+      .join('')}
       </ul>
     </section>
 
