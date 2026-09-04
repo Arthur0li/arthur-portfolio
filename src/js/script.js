@@ -417,7 +417,6 @@ function icon(name) {
     arrowRight: '→',
     external: '↗',
     linkedin: 'in',
-    mail: '✉',
     close: '×'
   };
   return icons[name] || '';
@@ -497,7 +496,28 @@ function renderProjectCard(project) {
         <div class="project-actions">
           <a class="text-link" data-demo href="${project.demo}" target="_blank" rel="noopener">${icon('external')} ${tr.demo}</a>
           <span class="dot">·</span>
-          <a class="text-link secondary" data-github href="${project.github}" target="_blank" rel="noopener">${icon('github')} ${tr.github}</a>
+          <a
+    class="text-link secondary"
+    data-github
+    href="${project.github}"
+    target="_blank"
+    rel="noopener"
+>
+    <img
+        class="project-icon project-icon-light"
+        src="src/img/icons/github_light.png"
+        alt=""
+    >
+
+    <img
+        class="project-icon project-icon-dark"
+        src="src/img/icons/github_dark.png"
+        alt=""
+        aria-hidden="true"
+    >
+
+    <span>${tr.github}</span>
+</a>
         </div>
       </div>
     </article>`;
@@ -774,12 +794,25 @@ function openProject(id) {
       </a>
 
       <a
-        class="btn btn-ghost"
-        href="${selectedProject.github}"
-        target="_blank"
-        rel="noopener"
+          class="btn btn-ghost"
+          href="${selectedProject.github}"
+          target="_blank"
+          rel="noopener"
       >
-        ⌘ ${tr.github}
+          <img
+              class="project-icon project-icon-light"
+              src="src/img/icons/github_light.png"
+              alt=""
+          >
+
+          <img
+              class="project-icon project-icon-dark"
+              src="src/img/icons/github_dark.png"
+              alt=""
+              aria-hidden="true"
+          >
+
+          <span>${tr.github}</span>
       </a>
     </div>
   `;

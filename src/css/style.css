@@ -488,6 +488,26 @@ html.dark .snake-image-dark {
   border-top: 1px solid var(--border);
 }
 
+.project-icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    flex: 0 0 16px;
+}
+
+.project-icon-dark {
+    display: none;
+}
+
+html.dark .project-icon-light {
+    display: none;
+}
+
+html.dark .project-icon-dark {
+    display: block;
+}
+
 .text-link {
   border: 0;
   background: transparent;
