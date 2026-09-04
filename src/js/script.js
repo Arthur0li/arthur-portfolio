@@ -331,7 +331,6 @@ const translations = {
     footer: {
       prompt: 'Have a project, idea or opportunity?',
       cta: "Let's talk →",
-      copy: 'All rights reserved'
     }
   },
   pt: {
@@ -393,7 +392,6 @@ const translations = {
     footer: {
       prompt: 'Tem um projeto, ideia ou oportunidade?',
       cta: 'Vamos conversar →',
-      copy: 'Todos os direitos reservados'
     }
   }
 };
@@ -610,7 +608,7 @@ function renderFooter() {
       <div class="footer-inner">
         <div class="footer-prompt">
           <p>${tr.prompt}</p>
-          <a href="mailto:artholi321@gmail.com">${tr.cta}</a>
+          <a href="#" data-page="contact">${tr.cta}</a>
         </div>
         <div class="socials">
           <a class="social-link" href="https://www.linkedin.com/in/arthur-oliveira-21ab8a236/" target="_blank" rel="noopener">in LinkedIn</a>
@@ -656,7 +654,6 @@ function renderFooter() {
           </a>
         </div>
       </div>
-      <div class="footer-bottom">© ${new Date().getFullYear()} Arthur · ${tr.copy}</div>
     </div>`;
 }
 
@@ -694,10 +691,13 @@ function navigate(page) {
 function renderPage() {
   document.documentElement.lang = currentLang === 'en' ? 'en' : 'pt-BR';
   updateHeaderLabels();
+
   if (currentPage === 'home') renderHome();
   if (currentPage === 'about') renderAbout();
   if (currentPage === 'contact') renderContact();
+
   renderFooter();
+  attachPageLinks();
   updateActiveNav();
 }
 
