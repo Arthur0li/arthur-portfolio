@@ -18,7 +18,7 @@ const projects = [
       pt: 'Um projeto de produtividade que combina sessões de foco no estilo Pomodoro com uma experiência musical criada para tornar os momentos de estudo e trabalho mais agradáveis.'
     },
 
-    image: 'src/img/pomobeats_print.png',
+    image: 'src/img/prints/pomobeats_print.png',
 
     problem: {
       en: 'Traditional productivity timers can make focused work feel repetitive and disconnected from the experience of the person using them.',
@@ -86,7 +86,7 @@ const projects = [
       pt: 'Uma aplicação web para gerenciamento de consultas médicas, desenvolvida a partir da transformação de uma interface existente em uma aplicação baseada em Flask com integração ao backend.'
     },
 
-    image: 'src/img/flask_print.png',
+    image: 'src/img/prints/flask_print.png',
 
     problem: {
       en: 'The original interface needed to become a functional application capable of handling authentication, appointment data and communication with an API.',
@@ -156,7 +156,7 @@ const projects = [
       pt: 'Um projeto de análise de dados que transforma conjuntos de dados da Copa do Mundo em informações visuais utilizando Python e Pandas.'
     },
 
-    image: 'src/img/wc_print.jpg',
+    image: 'src/img/prints/wc_print.jpg',
 
     problem: {
       en: 'Raw datasets can be difficult to interpret when presented only as tables and numbers, making it harder to identify patterns and comparisons.',
@@ -223,7 +223,7 @@ const projects = [
       pt: 'Uma página 404 personalizada criada para transformar um erro de navegação em uma experiência intencional, visual e consistente com o restante do site.'
     },
 
-    image: 'src/img/404_print.jpg',
+    image: 'src/img/prints/404_print.jpg',
 
     problem: {
       en: 'A default 404 page provides little context and can make users feel lost when they reach a page that does not exist.',
@@ -444,13 +444,13 @@ function renderHome() {
         <div class="snake-wrap">
           <img
               class="snake-image snake-image-light"
-              src="src/img/light.png"
+              src="src/img/snake/light.png"
               alt="Ilustração de uma cobra, elemento visual do portfólio"
           >
 
           <img
               class="snake-image snake-image-dark"
-              src="src/img/dark.png"
+              src="src/img/snake/dark.png"
               alt=""
               aria-hidden="true"
           >
