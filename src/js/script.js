@@ -311,7 +311,7 @@ const translations = {
         "My projects are where I bring together development, design and curiosity. I'm interested not only in making something work, but also in making it clear, useful and enjoyable to use.",
         "I'm still growing as a developer, and that is one of the things I enjoy most about this journey. Every project gives me an opportunity to learn something new, make mistakes, try a different approach and improve what I already know. I don't expect to have everything figured out; I would rather keep exploring, building and turning what I learn into something real."
       ],
-      quote: 'The best interface is the one you don’t notice — because it just works.',
+      quote: 'The best way to predict the future is to invent it.',
       focusLabel: 'Currently focused on',
       focuses: [
         'Open-source tools for environmental data',
@@ -372,7 +372,7 @@ const translations = {
         "Meus projetos são onde junto desenvolvimento, design e curiosidade. Não quero apenas fazer algo funcionar, mas também tornar a experiência clara, útil e agradável para quem vai utilizá-la.",
         "Ainda estou evoluindo como desenvolvedor, e essa é uma das coisas que mais gosto nessa jornada. Cada projeto me dá a oportunidade de aprender algo novo, cometer erros, experimentar uma abordagem diferente e melhorar o que já sei. Não espero ter tudo resolvido; prefiro continuar explorando, construindo e transformando o que aprendo em algo real."
       ],
-      quote: 'A melhor interface é aquela que você nem percebe — porque simplesmente funciona.',
+      quote: "A melhor maneira de prever o futuro é inventá-lo.",
       focusLabel: 'Atualmente focado em',
       focuses: [
         'Ferramentas open-source para dados ambientais',
