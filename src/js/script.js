@@ -287,7 +287,6 @@ const translations = {
     projects: {
       label: 'Selected Work',
       heading: 'Projects that matter',
-      sub: 'Each one began with a real problem.',
       demo: 'Live Demo',
       github: 'GitHub',
       view: 'View case study'
@@ -350,7 +349,6 @@ const translations = {
     projects: {
       label: 'Trabalhos Selecionados',
       heading: 'Projetos que importam',
-      sub: 'Cada um começou com um problema real.',
       demo: 'Demo',
       github: 'GitHub',
       view: 'Ver case completo'
@@ -461,7 +459,6 @@ function renderHome() {
             <p class="eyebrow">${tr.projects.label}</p>
             <h2>${tr.projects.heading}</h2>
           </div>
-          <p class="section-sub">${tr.projects.sub}</p>
         </div>
         <div class="project-grid">
           ${projects.map(renderProjectCard).join('')}
