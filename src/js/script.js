@@ -314,9 +314,9 @@ const translations = {
       quote: 'The best way to predict the future is to invent it.',
       focusLabel: 'Currently focused on',
       focuses: [
-        'Open-source tools for environmental data',
-        'Developer experience at the API layer',
-        'Systems thinking in product design'
+        "Web development with Python and JavaScript",
+        "UX/UI and accessible digital experiences",
+        "Learning through hands-on projects"
       ],
       back: 'Back to projects'
     },
@@ -375,9 +375,9 @@ const translations = {
       quote: "A melhor maneira de prever o futuro é inventá-lo.",
       focusLabel: 'Atualmente focado em',
       focuses: [
-        'Ferramentas open-source para dados ambientais',
-        'Experiência de desenvolvimento na camada de API',
-        'Pensamento sistêmico em design de produto'
+        "Desenvolvimento web com Python e JavaScript",
+        "UX/UI e experiências digitais acessíveis",
+        "Aprendizado através de projetos práticos"
       ],
       back: 'Voltar aos projetos'
     },
@@ -529,7 +529,7 @@ function renderAbout() {
 
         <div class="about-grid">
           <div class="about-image">
-            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=700&h=875&fit=crop&auto=format" alt="A serene natural landscape">
+            <img src="./src/img/about/about.png" alt="Landscape" loading="lazy">
           </div>
           <div class="about-copy">
             ${tr.body.map(p => `<p>${p}</p>`).join('')}
