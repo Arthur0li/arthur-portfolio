@@ -231,7 +231,6 @@ html.dark .snake-image-dark {
 .project-card:hover .project-hover { background: rgba(0,0,0,.25); }
 .project-hover span { transform: translateY(8px); opacity: 0; background: rgba(255,255,255,.95); color: #1a1714; border-radius: 999px; padding: 8px 14px; font-size: 12px; font-weight: 600; transition: .3s ease; }
 .project-card:hover .project-hover span { transform: translateY(0); opacity: 1; }
-.project-number { position: absolute; top: 12px; left: 12px; padding: 3px 8px; border-radius: 999px; background: rgba(26,23,20,.35); color: rgba(255,255,255,.9); font: 600 12px ui-monospace, SFMono-Regular, Menlo, monospace; backdrop-filter: blur(4px); }
 .project-body { padding: 22px; }
 .project-title { margin: 0 0 2px; font: 600 20px/1.2 var(--font-display); }
 .project-tagline { margin: 0; color: var(--muted-foreground); font-size: 14px; font-weight: 600; }

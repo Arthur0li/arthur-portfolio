@@ -487,7 +487,6 @@ function renderProjectCard(project) {
       <div class="project-image-wrap">
         <img src="${project.image}" alt="${project.name[currentLang]} — ${project.tagline[currentLang]}" loading="lazy">
         <div class="project-hover"><span>${tr.view} ${icon('arrowUp')}</span></div>
-        <span class="project-number">${project.num}</span>
       </div>
       <div class="project-body">
         <div>
@@ -644,8 +643,6 @@ function openProject(id) {
   if (!selectedProject) return;
 
   const tr = translations[currentLang].modal;
-
-  document.getElementById('modalProjectNumber').textContent = selectedProject.num;
 
   document.getElementById('modalProjectName').textContent =
     selectedProject.name[currentLang];
