@@ -305,11 +305,11 @@ const translations = {
     about: {
       label: 'About',
       headline: 'Nice to meet you.',
-      sub: "I'm a developer who cares about the why behind every product.",
+      sub: "I learn by building, experimenting and turning ideas into real projects.",
       body: [
-        'I started coding out of curiosity — I wanted to understand how the things I used every day actually worked. That curiosity became a craft. Over time, I learned to care not just about whether something works, but whether it feels right.',
-        "My work sits at the intersection of technology and human experience. I'm drawn to projects with a clear purpose beyond the screen — tools that help people understand something, connect with someone, or act on information they couldn't access before.",
-        "I find ideas in unexpected places. Long walks. Conversations with people in fields I know nothing about. The natural world, especially — there's something in the way ecosystems self-organise that keeps showing up in how I think about software."
+        "I like learning by building. When I discover something I don't understand, my first instinct is to explore it, test ideas and see what I can create with it.",
+        "My projects are where I bring together development, design and curiosity. I'm interested not only in making something work, but also in making it clear, useful and enjoyable to use.",
+        "I'm still growing as a developer, and that is one of the things I enjoy most about this journey. Every project gives me an opportunity to learn something new, make mistakes, try a different approach and improve what I already know. I don't expect to have everything figured out; I would rather keep exploring, building and turning what I learn into something real."
       ],
       quote: 'The best interface is the one you don’t notice — because it just works.',
       focusLabel: 'Currently focused on',
@@ -366,11 +366,11 @@ const translations = {
     about: {
       label: 'Sobre',
       headline: 'Prazer em conhecê-lo.',
-      sub: 'Sou um desenvolvedor que se importa com o porquê de cada produto.',
+      sub: "Aprendo construindo, experimentando e transformando ideias em projetos reais.",
       body: [
-        'Comecei a programar por curiosidade — queria entender como as coisas que usava no dia a dia funcionavam de verdade. Essa curiosidade se tornou um ofício. Com o tempo, aprendi a me preocupar não só se algo funciona, mas se ele parece certo.',
-        'Meu trabalho vive na interseção de tecnologia e experiência humana. Sou atraído por projetos com um propósito claro além da tela — ferramentas que ajudam pessoas a entender algo, conectar-se com alguém ou agir com base em informações que antes eram inacessíveis.',
-        'Encontro ideias em lugares inesperados. Longas caminhadas. Conversas com pessoas de áreas que não conheço. O mundo natural, especialmente — há algo na forma como os ecossistemas se organizam que continua aparecendo na forma como penso sobre software.'
+        "Gosto de aprender colocando a mão na massa. Quando encontro algo que não entendo, minha primeira reação é explorar, testar ideias e descobrir o que consigo criar a partir disso.",
+        "Meus projetos são onde junto desenvolvimento, design e curiosidade. Não quero apenas fazer algo funcionar, mas também tornar a experiência clara, útil e agradável para quem vai utilizá-la.",
+        "Ainda estou evoluindo como desenvolvedor, e essa é uma das coisas que mais gosto nessa jornada. Cada projeto me dá a oportunidade de aprender algo novo, cometer erros, experimentar uma abordagem diferente e melhorar o que já sei. Não espero ter tudo resolvido; prefiro continuar explorando, construindo e transformando o que aprendo em algo real."
       ],
       quote: 'A melhor interface é aquela que você nem percebe — porque simplesmente funciona.',
       focusLabel: 'Atualmente focado em',
