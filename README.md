@@ -1,35 +1,36 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=AB0D0D&text=Text&textBg=false&animation=fadeIn&desc=Desc&fontColor=FFFFB1"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=2B4A1C&text=Arthur%20Oliveira&textBg=false&animation=fadeIn&desc=Personal%20Portfolio&fontColor=F5F1EA"/>
 
-# Project Name
+# Arthur Oliveira — Personal Portfolio
 
-A short description explaining what the project does and its purpose.
+A personal portfolio website designed to present my projects, development experience and design process in a clear and accessible way.
+
+The portfolio combines **web development, UX/UI and accessibility** to create a simple experience for recruiters, developers and anyone interested in my work.
+
+Instead of focusing only on the final result of each project, the portfolio also presents the **problem, approach, role, technologies and outcome** behind them.
 
 ---
 
 ## 🌐 Live Demo
 
-Try (Project-Name) directly in your browser:
+Explore my portfolio directly in your browser:
 
-🔗 Coming soon...
+🔗 [Visit the Portfolio](https://arthur0li.github.io/arthur-portfolio/)
 
-No installation required — simply open the application and start focusing.
+No installation is required to explore the website.
 
 ---
 
 ## ✨ Features
 
-- ⏱️ ---
-- 🔄 ---
-- 🔔 ---
-- 🎵 ---
-- 📱 ---
-- 🎨 ---
-
----
-
-## 📸 Preview
-
-space for photo
+- 🌐 Single-page portfolio with dynamic sections
+- 🎨 Light and dark themes
+- 🌎 English and Portuguese language support
+- 📂 Interactive project cards and case studies
+- 🔍 Detailed project information inside modal windows
+- ♿ Accessibility-focused interface
+- 📱 Responsive project layouts
+- 💾 Local storage for language and theme preferences
+- 🔗 Direct links to projects, GitHub and social profiles
 
 ---
 
@@ -37,62 +38,11 @@ space for photo
 
 <div align="center">
 
-<!-- Badges here -->
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
 
 </div>
 
----
-
-## 🛠️ Installation
-
-
-If you'd like to run the project locally:
-
-```bash
-git clone https://github.com/username/project-name.git
-
-cd project-name
-```
-
-Then open the `---` file in your browser.
-
----
-
-## 📖 How --- Works
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a nulla sapien. Donec fermentum ultrices nisi, sed imperdiet tellus euismod vel:
-
-1. 🍅 ---
-2. ☕ ---
-3. 🔄 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a nulla sapien. Donec fermentum ultrices nisi, sed imperdiet tellus euismod vel.
-
----
-
-## 📚 What I Learned
-
-This project helped me improve my knowledge of:
-
-- skill 1
-- skill 2
-- skill 3
-
----
-
-## 👨‍💻 Author
-
-Developed by **Arthur Oliveira**.
-
-📫 Connect with me:
-
-- 💼 LinkedIn: https://www.linkedin.com/in/arthur-oliveira-21ab8a236/?locale=en
-- 🐙 GitHub: https://github.com/Arthur0li
-
----
-
-## ⭐ Support
-
-If you enjoyed this project, consider giving it a star on GitHub!
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=AB0D0D&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=2B4A1C&section=footer"/>
