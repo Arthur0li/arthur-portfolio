@@ -398,7 +398,10 @@ const translations = {
 
 let currentPage = 'home';
 let currentLang = localStorage.getItem('pf-lang') === 'pt' ? 'pt' : 'en';
-let isDark = localStorage.getItem('pf-dark') === 'true';
+const savedTheme = localStorage.getItem('pf-dark');
+let isDark = savedTheme !== null
+  ? savedTheme === 'true'
+  : window.matchMedia('(prefers-color-scheme: dark)').matches;
 let selectedProject = null;
 
 const main = document.getElementById('main');
