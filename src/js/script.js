@@ -281,7 +281,7 @@ const translations = {
       line1: 'I turn ideas',
       line2: 'into digital',
       line3: 'experiences',
-      description: 'I build software that solves real problems — with care for the people who will use it.',
+      description: 'I build software that solves real problems, with care for the people who will use it.',
       cta: 'Explore my work',
     },
     projects: {
@@ -342,7 +342,7 @@ const translations = {
       line1: 'Transformo ideias',
       line2: 'em experiências',
       line3: 'digitais',
-      description: 'Crio software que resolve problemas reais — com cuidado pelas pessoas que o utilizam.',
+      description: 'Crio software que resolve problemas reais, com cuidado pelas pessoas que o utilizam.',
       cta: 'Explorar projetos',
     },
     projects: {
