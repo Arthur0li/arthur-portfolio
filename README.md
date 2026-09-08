@@ -1,7 +1,5 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=2B4A1C&text=Arthur%20Oliveira&textBg=false&animation=fadeIn&desc=Personal%20Portfolio&fontColor=F5F1EA"/>
 
-# Arthur Oliveira — Personal Portfolio
-
 A personal portfolio website designed to present my projects, development experience and design process in a clear and accessible way.
 
 The portfolio combines **web development, UX/UI and accessibility** to create a simple experience for recruiters, developers and anyone interested in my work.
