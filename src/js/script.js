@@ -132,8 +132,7 @@ const projects = [
       en: 'A practical project for applying Flask, backend integration and AI-assisted development to a complete web application.',
       pt: 'Um projeto prático para aplicar Flask, integração de backend e desenvolvimento assistido por IA em uma aplicação web completa.'
     },
-
-    demo: 'https://github.com/Arthur0li/agenda-medica-flask',
+    
     github: 'https://github.com/Arthur0li/agenda-medica-flask'
   },
 
@@ -492,15 +491,31 @@ function renderProjectCard(project) {
         <p class="project-description">${project.description[currentLang]}</p>
         <div class="tag-list">${tagMarkup(visibleTags)}</div>
         <div class="project-actions">
-          <a class="text-link" data-demo href="${project.demo}" target="_blank" rel="noopener">${icon('external')} ${tr.demo}</a>
-          <span class="dot">·</span>
+          ${
+            project.demo
+              ? `
+                <a
+                  class="text-link"
+                  data-demo
+                  href="${project.demo}"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  ${icon('external')} ${tr.demo}
+                </a>
+
+                <span class="dot">·</span>
+              `
+              : ''
+          }
+
           <a
-    class="text-link secondary"
-    data-github
-    href="${project.github}"
-    target="_blank"
-    rel="noopener"
->
+            class="text-link secondary"
+            data-github
+            href="${project.github}"
+            target="_blank"
+            rel="noopener"
+          >
     <img
         class="project-icon project-icon-light"
         src="src/img/icons/github_light.png"
