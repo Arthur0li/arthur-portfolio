@@ -156,7 +156,7 @@ const projects = [
       pt: 'Um projeto de análise de dados que transforma conjuntos de dados da Copa do Mundo em informações visuais utilizando Python e Pandas.'
     },
 
-    image: 'src/img/prints/wc_print.jpg',
+    image: 'src/img/prints/wc_print.png',
 
     problem: {
       en: 'Raw datasets can be difficult to interpret when presented only as tables and numbers, making it harder to identify patterns and comparisons.',
