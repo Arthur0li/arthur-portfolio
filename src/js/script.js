@@ -200,7 +200,7 @@ const projects = [
       pt: 'Um projeto focado na prática de análise de dados e no aprendizado de como comunicar informações por meio de representações visuais.'
     },
 
-    demo: 'https://github.com/Arthur0li/world-cup-analytics',
+    demo: 'https://world-cup-analytics-arthur0li.streamlit.app/',
     github: 'https://github.com/Arthur0li/world-cup-analytics'
   },
 
